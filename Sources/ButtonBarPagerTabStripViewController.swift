@@ -60,6 +60,7 @@ public struct ButtonBarPagerTabStripSettings {
         // only used if button bar is created programaticaly and not using storyboards or nib files
         public var buttonBarHeight: CGFloat?
         public var sidePadding: CGFloat = 0
+        public var offSet: CGFloat = 0
     }
     
     public var style = Style()
@@ -120,7 +121,7 @@ open class ButtonBarPagerTabStripViewController: PagerTabStripViewController, Pa
             buttonBar.selectedBar.backgroundColor = .black
             buttonBar.autoresizingMask = .flexibleWidth
             var newContainerViewFrame = containerView.frame
-            newContainerViewFrame.origin.y = buttonBarHeight
+            newContainerViewFrame.origin.y = buttonBarHeight + settings.style.offSet
             newContainerViewFrame.size.height = containerView.frame.size.height - (buttonBarHeight - containerView.frame.origin.y)
             containerView.frame = newContainerViewFrame
             return buttonBar
