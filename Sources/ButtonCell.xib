@@ -1,48 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="zg4-fX-zUF" customClass="ButtonBarViewCell" customModule="XLPagerTabStrip" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="puQ-NK-8qw" customClass="ButtonBarViewCell" customModule="XLPagerTabStrip" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7f-rk-sQl">
-                        <rect key="frame" x="22" y="12" width="37.5" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-oY-94I">
+                        <rect key="frame" x="0.0" y="5.5" width="80" height="34.5"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tFG-yJ-6Th">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1qa-HS-cv0">
                         <rect key="frame" x="22.5" y="2.5" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="35" id="VRw-5F-5WY"/>
-                            <constraint firstAttribute="height" constant="35" id="ojk-Ug-Lgh"/>
+                            <constraint firstAttribute="height" constant="35" id="2TV-Tf-Lfn"/>
+                            <constraint firstAttribute="width" constant="35" id="30B-sa-Azo"/>
                         </constraints>
                     </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.027450980390000001" green="0.72549019609999998" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="tFG-yJ-6Th" firstAttribute="centerY" secondItem="zg4-fX-zUF" secondAttribute="centerY" id="5so-ZP-gRs"/>
-                <constraint firstItem="tFG-yJ-6Th" firstAttribute="centerX" secondItem="zg4-fX-zUF" secondAttribute="centerX" id="9em-NR-hoa"/>
-                <constraint firstItem="s7f-rk-sQl" firstAttribute="centerY" secondItem="zg4-fX-zUF" secondAttribute="centerY" id="ZeP-6I-AXE"/>
-                <constraint firstItem="s7f-rk-sQl" firstAttribute="centerX" secondItem="zg4-fX-zUF" secondAttribute="centerX" id="c15-bZ-hPG"/>
+                <constraint firstItem="1qa-HS-cv0" firstAttribute="centerX" secondItem="puQ-NK-8qw" secondAttribute="centerX" id="1t8-Dd-Ukq"/>
+                <constraint firstItem="AMa-oY-94I" firstAttribute="leading" secondItem="puQ-NK-8qw" secondAttribute="leading" id="Mrm-f5-hYC"/>
+                <constraint firstItem="1qa-HS-cv0" firstAttribute="centerY" secondItem="puQ-NK-8qw" secondAttribute="centerY" id="OVr-NS-2bV"/>
+                <constraint firstItem="AMa-oY-94I" firstAttribute="centerX" secondItem="puQ-NK-8qw" secondAttribute="centerX" id="ZkP-Pz-Mv1"/>
+                <constraint firstAttribute="bottom" secondItem="AMa-oY-94I" secondAttribute="bottom" id="jzM-13-fSR"/>
+                <constraint firstItem="AMa-oY-94I" firstAttribute="top" secondItem="puQ-NK-8qw" secondAttribute="top" constant="5.5" id="rqL-J6-3QQ"/>
+                <constraint firstAttribute="trailing" secondItem="AMa-oY-94I" secondAttribute="trailing" id="zYA-lu-faD"/>
             </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="1qa-HS-cv0"/>
+                </mask>
+            </variation>
             <connections>
-                <outlet property="imageView" destination="tFG-yJ-6Th" id="Odb-dR-tf4"/>
-                <outlet property="label" destination="s7f-rk-sQl" id="4gU-tb-BMB"/>
+                <outlet property="imageView" destination="1qa-HS-cv0" id="ioa-Zs-ass"/>
+                <outlet property="label" destination="AMa-oY-94I" id="dYH-MF-tTO"/>
             </connections>
             <point key="canvasLocation" x="307" y="541"/>
         </collectionViewCell>
